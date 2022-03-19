@@ -27,7 +27,7 @@ public class DijkstraTree {
 
 		public final String value;
                 public nodeList parent;
-		public Arista[] adj;
+		public Edge[] adj;
 
 		public nodeList(String val) {
 			value = val;
