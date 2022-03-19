@@ -26,7 +26,7 @@ public class DijkstraTree {
 	class nodeList implements Comparable<nodeList> {
 
 		public final String value;
-        public nodeList parent;
+                public nodeList parent;
 		public Arista[] adj;
 
 		public nodeList(String val) {
@@ -58,7 +58,6 @@ public class DijkstraTree {
 			for (Edge edges : a.adj) {
 				nodeList v = edges.finish;
 				double weight = edges.weight;
-
 				double dist = distance.get(a) + weight;
 				if (dist < distance.get(v)) {
 					queue.remove(v);
@@ -70,6 +69,4 @@ public class DijkstraTree {
 		}
 		return distance;
 	}
-
-
 }
