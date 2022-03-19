@@ -16,7 +16,7 @@ public class DijkstraTree {
 		public final nodeList finish;
 		public final double weight;
 
-		public Edge(Node2 finish, double weight) {
+		public Edge(nodeList finish, double weight) {
 			finish = this.finish;
 			weight = this.weight;
 		}
