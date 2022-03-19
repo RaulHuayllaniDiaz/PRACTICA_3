@@ -31,7 +31,7 @@ public class DijkstraTree {
 
 		public nodeList(String val) {
 			value = val;
-		}
+		}  
 
 		public String toString() {
 			return value;
