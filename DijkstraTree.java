@@ -55,9 +55,9 @@ public class DijkstraTree {
 
 		while (!queue.isEmpty()) {
 			nodeList a = queue.poll();
-			for (Edge edges : a.adj) {
-				nodeList v = edges.finish;
-				double weight = edges.weight;
+			for (Edge e : a.adj) {
+				nodeList v = e.finish;
+				double weight = e.weight;
 				double dist = distance.get(a) + weight;
 				if (dist < distance.get(v)) {
 					queue.remove(v);
