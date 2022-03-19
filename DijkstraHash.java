@@ -13,8 +13,7 @@ public class DijkstraHash {
 
 	public HashMap<nodeList, Double> Dijkstra(nodeList source) {
 		for (nodeList node2 : nodeList) {
-			distance.put(node2, Double.POSITIVE_INFINITY);
-		}
+			distance.put(node2, Double.POSITIVE_INFINITY);}
 		distance.put(source, 0.0);
 		PriorityQueue<nodeList> queue = new PriorityQueue<nodeList>();
 		queue.add(source);
@@ -69,5 +68,3 @@ class nodeList implements Comparable<nodeList> {
 		return Double.compare(DijkstraHash.distance.get(this), DijkstraHash.distance.get(comp));
 	}
 }
-
-	
